@@ -1,0 +1,10 @@
+<h1><%= @deck.name %></h1>
+
+<p>More info on this deck</p>
+
+<h2>Listing q-side cards</h2>
+<ul>
+	<% @deck.cards.each do |card| %>
+		<li><%= card.q %></li>
+	<% end %>
+</ul>

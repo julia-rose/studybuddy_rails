@@ -1,0 +1,7 @@
+<h1><%= @user.name %>'s StudyBuddy Menu</h1>
+
+<ul>
+	<li><%= link_to "View all decks from all users", decks_path %></li>
+	<li><%= link_to "User history", '/users/' + @user.id.to_s + '/games' %></li>
+	<li><%= link_to "Add a new deck", new_deck_path %></li>
+</ul>

@@ -1,0 +1,8 @@
+	<ul>
+		<% Deck.all.each do |deck| %>
+			<li> ID: <%= deck.id %> // Created by: <%= User.find(deck.user_id).name %> </br>
+			Name: <%= link_to deck.name, deck_path(deck) %></br>
+			Description: <%= deck.description %></br>
+			------</br></li>
+			<% end %>
+	</ul>
